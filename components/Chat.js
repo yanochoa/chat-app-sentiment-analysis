@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import axios from "axios";
 import Pusher from "pusher-js";
-//import ChatMessage from "./ChatMessage";
+import ChatMessage from "./ChatMessage";
 
 const SAD_EMOJI = [55357, 56864];
 const HAPPY_EMOJI = [55357, 56832];
@@ -72,6 +72,11 @@ class Chat extends Component {
               {this.props.activeUser}
             </h2>
           </div>
+
+          {/* The meat and potatoes section, 
+              Here I look through each object in the cats array and check who the sender is to set positions
+              Then, we use the sentiment score to select the correct emoji
+          */}
           <div
             className="px-4 pb-4 w-100 d-flex flex-row flex-wrap align-items-start align-content-start position-relative"
             style={{ height: "calc(100% - 180px)", overflowY: "scroll" }}
