@@ -10,4 +10,4 @@ Pusher — A technology for building apps with varying realtime needs.
 
 Sentiment — A module that uses the AFINN-165 wordlist and Emoji Sentiment Ranking to perform sentiment analysis on arbitrary blocks of input text.
 
-React — You know what React is..  A very popular componenti-based JS DOM rendering framework for building scalable web applications.
+React — Popular component-based JS DOM rendering framework for building scalable web applications.
